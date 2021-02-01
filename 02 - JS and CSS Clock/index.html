@@ -60,6 +60,8 @@
     const hands = document.querySelectorAll('.hand');
     hands.forEach(hand => {
       hand.style.transformOrigin = "100%";
+      hand.style.transition = "all 0.05s";
+      hand.style.transitionTimingFunction = "cubic-bezier(0.68, -0.55, 0.27, 1.55)";
     });
 
     const hHand = document.querySelector('.hour-hand');
